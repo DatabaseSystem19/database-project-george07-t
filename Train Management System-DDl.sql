@@ -160,70 +160,70 @@ INSERT INTO route (stop_no, stop_name, train_id) VALUES (9, 'Dhaka', 21);
 --TICKETS TABLE
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no,NID)
-SELECT 1907,t.train_id,TO_DATE('2023-05-20','YYYY-MM-DD'),'george', c.class_type,t.source,t.destination,18,1907114
+SELECT 1907,t.train_id,TO_DATE('2023-05-20','YYYY-MM-DD'),u.name, c.class_type,t.source,t.destination,18,1907114
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'gtr'
 WHERE t.train_id =07 AND c.class_type = 'ka';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2001, t.train_id, TO_DATE('2023-05-20', 'YYYY-MM-DD'), 'Rahim', c.class_type, t.source, t.destination, 5, u.NID
+SELECT 2001, t.train_id, TO_DATE('2023-05-20', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 5, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'rahim123'
 WHERE t.train_id = 13 AND c.class_type = 'kha';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2002, t.train_id, TO_DATE('2023-06-10', 'YYYY-MM-DD'), 'Karim', c.class_type, t.source, t.destination, 12, u.NID
+SELECT 2002, t.train_id, TO_DATE('2023-06-10', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 12, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'karim123'
 WHERE t.train_id = 14 AND c.class_type = 'ga';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2003, t.train_id, TO_DATE('2023-07-05', 'YYYY-MM-DD'), 'Sami', c.class_type, t.source, t.destination, 7, u.NID
+SELECT 2003, t.train_id, TO_DATE('2023-07-05', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 7, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'sami123'
 WHERE t.train_id = 15 AND c.class_type = 'gha';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2004, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), 'Raha', c.class_type, t.source, t.destination, 15, u.NID
+SELECT 2004, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 15, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'raha123' 
 WHERE t.train_id = 16 AND c.class_type = 'uma';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2005, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), 'Raha', c.class_type, t.source, t.destination, 16, u.NID
+SELECT 2005, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 16, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'raha123' 
 WHERE t.train_id = 19 AND c.class_type = 'ga';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2006, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), 'Lisa', c.class_type, t.source, t.destination, 17, u.NID
+SELECT 2006, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 17, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'lisa123' 
 WHERE t.train_id = 21 AND c.class_type = 'uma';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2007, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), 'Doniel', c.class_type, t.source, t.destination, 18, u.NID
+SELECT 2007, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 18, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'doinel123'
 WHERE t.train_id = 20 AND c.class_type = 'kha';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2008, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), 'Rabbi', c.class_type, t.source, t.destination, 19, u.NID
+SELECT 2008, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), u.name, c.class_type, t.source, t.destination, 19, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'rabbi123' 
 WHERE t.train_id = 18 AND c.class_type = 'gha';
 
 INSERT INTO tickets (ticket_num, train_num, j_date, passenger_name, class, source, destnation, seat_no, NID)
-SELECT 2009, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'), 'Samir', c.class_type, t.source, t.destination, 20, u.NID
+SELECT 2009, t.train_id, TO_DATE('2023-08-15', 'YYYY-MM-DD'),u.name, c.class_type, t.source, t.destination, 20, u.NID
 FROM train t
 JOIN class c ON t.train_id = c.train_id
 JOIN users u ON u.username = 'samir123' 
@@ -259,5 +259,3 @@ SELECT * FROM payment;
 --COMMIT
 
 commit;
-
-
