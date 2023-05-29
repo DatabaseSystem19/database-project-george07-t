@@ -144,7 +144,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Seats: ' || p_seats);
     DBMS_OUTPUT.PUT_LINE('Destination: ' || p_destination);
     DBMS_OUTPUT.PUT_LINE('Source: ' || p_source);
-    DBMS_OUTPUT.PUT_LINE('Average Time: ' || p_av_time);
+    DBMS_OUTPUT.PUT_LINE('Arival Time: ' || p_av_time);
 EXCEPTION
     WHEN NO_DATA_FOUND THEN
         DBMS_OUTPUT.PUT_LINE('No train found with ID: ' || p_train_id);
