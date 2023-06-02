@@ -22,30 +22,27 @@ The project consists of several tables that are designed to capture specific asp
     Payment: The Payment table tracks payment details for tickets. It includes ticket number, card number, bank, amount, and transaction ID. The transaction ID serves as the primary key, and a foreign key references the Tickets table.
 Users  Table
 -----
-
 ![Screenshot (539)](https://github.com/DatabaseSystem19/database-project-george07-t/assets/68592871/7a3f9dfe-c53b-4245-8088-acd93bbecb92)
+
 Train  Table
 -----
-
 ![Screenshot (540)](https://github.com/DatabaseSystem19/database-project-george07-t/assets/68592871/669e3d77-0d0d-4fdd-ac2e-0565e7f2b885)
+
 Class  Table
 -----
-
 ![Screenshot (541)](https://github.com/DatabaseSystem19/database-project-george07-t/assets/68592871/d2f03960-df58-4a76-917a-e3c8bb664f63)
+
 Route  Table
 -----
-
 ![Screenshot (542)](https://github.com/DatabaseSystem19/database-project-george07-t/assets/68592871/fae4875b-976c-4767-96ca-b48af80d829d)
+
 Tickets  Table
 -----
-
 ![Screenshot (543)](https://github.com/DatabaseSystem19/database-project-george07-t/assets/68592871/cb93dd76-6d7e-420c-812e-0fea8970b380)
+
 Payment  Table
 -----
-
 ![Screenshot (544)](https://github.com/DatabaseSystem19/database-project-george07-t/assets/68592871/fa2ce096-68a3-4155-b061-ece102cc6a72)
-
-
 
 The Train Management System Database project facilitates various operations, such as:
 
