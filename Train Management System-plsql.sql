@@ -199,3 +199,26 @@ BEGIN
   DBMS_OUTPUT.PUT_LINE(value);
 END;
 /
+  
+SET SERVEROUTPUT ON;
+CREATE OR REPLACE TRIGGER update_tickets_train_id
+AFTER UPDATE OF train_id ON train
+FOR EACH ROW
+BEGIN
+  UPDATE tickets
+  SET train_num = :NEW.train_id
+  WHERE train_num = :OLD.train_id;
+END;
+/
+UPDATE train
+SET train_id = 007
+WHERE train_id = 07;
+
+SET SERVEROUTPUT ON;
+CREATE TRIGGER delete_user_trigger
+AFTER DELETE ON users
+FOR EACH ROW
+BEGIN
+    DELETE FROM tickets WHERE NID = OLD.NID;
+END;
+
